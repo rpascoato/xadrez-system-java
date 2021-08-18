@@ -1,12 +1,16 @@
 package aplicação;
 
-import boardgame.Board;
+import xadrez.PartidaXadrez;
 
 public class Programa {
 
 	public static void main(String[] args) {
 
-		Board board = new Board(8, 8);
+		PartidaXadrez partidaXadrez = new PartidaXadrez();
+		
+		UI.printBoard(partidaXadrez.getPecas());
+		
+		
 		
 
 	}
